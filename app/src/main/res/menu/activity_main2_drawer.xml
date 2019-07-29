@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_AvailabilityStatus"
+            android:icon="@drawable/ic_event_available_black_24dp"
+            android:title="View Availabilty Status" />
+        <item
+            android:id="@+id/nav_ViewSchedule"
+            android:icon="@drawable/ic_schedule_black_24dp"
+            android:title="View Schedule" />
+        <item
+            android:id="@+id/nav_ViewTimetable"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="View Timetable" />
+        <item
+            android:id="@+id/nav_ShowMap"
+            android:icon="@drawable/ic_place_black_24dp"
+            android:title="Show Map" />
+
+    </group>
+
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_signIn"
+            android:icon="@drawable/login"
+            android:title="Sign In" />
+        <item
+            android:id="@+id/nav_viewProfile"
+            android:icon="@drawable/ic_person_pin_black_24dp"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_editStatus"
+            android:icon="@drawable/ic_edit_black_24dp"
+            android:title="Edit Status" />
+        <item
+            android:id="@+id/nav_signOut"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="SignOut" />
+    </group>
+
+
+</menu>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ViewTimetable"
+    android:layout_marginTop="20dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <!--<Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spn_Shift"
+            android:entries="@array/Shift" />-->
+
+            <RadioGroup
+                android:weightSum="10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroupShift"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_weight="4.4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="@color/color_black"
+                    android:text="Select Shift: "/>
+
+                <RadioButton
+                    android:layout_weight="2.8"
+                    android:text="Morning"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiobtnShiftMorning" />
+
+                <RadioButton
+                    android:layout_weight="2.8"
+                    android:text="Evening"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiobtnShiftEvening"/>
+            </RadioGroup>
+
+        <!--<Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spn_Section"
+            android:entries="@array/Section" />-->
+        <RadioGroup
+            android:weightSum="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroupSection"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_weight="4.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/color_black"
+                android:text="Select Section: "/>
+
+            <RadioButton
+                android:text="A"
+                android:layout_weight="1.85"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiobtnSectionA" />
+
+            <RadioButton
+                android:text="B"
+                android:layout_weight="1.85"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiobtnSectionB"/>
+            <RadioButton
+                android:text="C"
+                android:layout_weight="1.85"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiobtnSectionC"
+                />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_weight="4.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/color_black"
+                android:text="Select Day: "/>
+            <Spinner
+                android:layout_weight="5.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spn_Day"
+                android:entries="@array/Days">
+            </Spinner>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_weight="4.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/color_black"
+                android:text="Select Semester: "/>
+            <Spinner
+                android:layout_weight="5.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spn_Semester"
+                android:entries="@array/Semester">
+            </Spinner>
+        </LinearLayout>
+        <!--<Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spn_Degree"
+            android:entries="@array/Degree" />-->
+        <RadioGroup
+            android:weightSum="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroupDegree"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_weight="4.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/color_black"
+                android:text="Select Degree: "/>
+
+            <RadioButton
+                android:text="BS"
+                android:layout_weight="2.85"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiobtnDegreeBS" />
+
+            <RadioButton
+                android:text="MSc"
+                android:layout_weight="2.85"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiobtnDegreeMSc"/>
+        </RadioGroup>
+
+        <!--<Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spn_Department"
+            android:entries="@array/Department">
+
+        </Spinner>-->
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:id="@+id/radioGroupDepartment"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_weight="4.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/color_black"
+                android:text="Select Department: "/>
+
+            <RadioButton
+                android:text="CS"
+                android:layout_weight="1.8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiobtnDepartmentCS" />
+
+            <RadioButton
+                android:text="IT"
+                android:layout_weight="1.85"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiobtnDepartmentIT"/>
+            <RadioButton
+                android:text="SE"
+                android:layout_weight="1.85"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiobtnDepartmentSE" />
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_timetable"
+            android:layout_marginTop="10dp"
+            android:text="Show Timetable"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TimetablerecyleList">
+
+
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+</FrameLayout>
